@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Yoga Club</h1>
+        <h2>Book Your Free Trial Class</h2>
+    </header>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <title>Yoga Club - Booking</title>
+
+    <body>
+
+        <!-- Booking Form on the booking page -->
+        <div class="form-container">
+            <h2>Book Your Yoga Class</h2>
+            <form id="bookingForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="age">Age:</label>
+                <select id="age" name="age" required>
+                    <option value="" disabled selected>Select your age</option>
+                </select>
+                <script>
+                    const ageSelect = document.getElementById('age');
+                    for (let age = 0; age <= 90; age++) {
+                        const option = document.createElement('option');
+                        option.value = age;
+                        option.textContent = age;
+                        ageSelect.appendChild(option);
+
+                    }             </script>
+
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="joiningDate">Joining Date:</label>
+                <input type="date" id="joiningDate" name="joiningDate" required><br>
+
+                <!-- New Time Dropdown -->
+                <label for="timeSelect">Select Time:</label>
+                <select id="timeSelect" name="timeSelect" required>
+                    <option value="" disabled selected>Select a time slot</option>
+                    <option value="morning">Morning Batch (7 AM)</option>
+                    <option value="afternoon">Afternoon Batch (1 PM)</option>
+                    <option value="evening">Evening Batch (6 PM)</option>
+                </select>
+
+                <!-- Common Declaration Checkbox -->
+                <div class="checkbox-container">
+                    <input type="checkbox" id="declaration" name="declaration" required>
+                    <label for="declaration">
+                        I understand that it is my responsibility to consult a physician prior to and regarding my
+                        participation in the yoga classes, health programs, or workshops offered by my instructor or
+                        substitute teacher. I represent and warrant that I am physically fit and I have no medical
+                        condition, which would prevent my full participation in these yoga classes, health programmes,
+                        or workshops.
+                    </label>
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Custom Confirmation Modal -->
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <p>Do you have your doctor's approval to do Yoga?</p>
+                <button id="modalYes">Yes</button>
+                <button id="modalNo">No</button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            Coach2Code Project by TROY
+        </footer>
+        <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    </body>
+
+</html>

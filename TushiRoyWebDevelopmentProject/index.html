@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <title>Yoga For Life - Home</title>
+</head>
+
+<body>
+    <!-- Main content of the index page -->
+    <header>
+        <h1>Welcome to Yoga For Life Club</h1>
+        <h4> Enquiry:tushiiroy@gmail.com</h4>
+        
+
+    </header>
+    <img src="https://yoga.ayush.gov.in/public/assets/front/blog/eys.jpg" alt="Yoga Image" width="600" height="400" />
+
+    <p>
+        <u>Yoga</u> is an ancient and complex practice, rooted in Indian Philosopy.Yoga as exercise is a physical
+        activity consisting mainly of postures, often connected by flowing sequences, sometimes accompanied by breathing
+        exercises, and frequently ending with relaxation lying down or meditation. Yoga in this form has become familiar
+        across the world, especially in the US and Europe. It is derived from medieval Haṭha yoga, which made use of
+        similar postures, but it is generally simply called "yoga". Academics have given yoga as exercise a variety of
+        names, including modern postural yoga and transnational anglophone yoga
+    </p>
+    <p>Yoga is a mind-body practice that combines physical poses, breathwork, and meditation. Preliminary research has
+        overwhelmingly found that yoga benefits physical and mental health. Potential benefits include improved balance,
+        increased bone density, less chronic pain, and lower stress levels.</p>
+    <h3>Types of Yoga</h3>
+    <ul>
+        <li>Hatha Yoga</li>
+        <li>Vinyasa Yoga</li>
+        <li>Ashtanga Yoga</li>
+        <li>Iyengar Yoga</li>
+        <li>Aerial Yoga</li>
+        <li>Prenatal Yoga</li>
+        <li>Hot Yoga</li>
+    </ul>
+    <p>Yoga is generally considered a safe activity for most people. To get started, try a beginner class with an
+        experienced instructor. 
+        <b>Disclaimer</b> If you are pregnant or have a chronic health condition, talk with a healthcare provider
+        about the best type of yoga for you. <a href="https://en.wikipedia.org/wiki/Yoga"> Read More about Yoga</a>    
+    </p> 
+   
+    <!-- Booking Form Modal -->
+    <div id="bookingFormModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Book Your Yoga Club</h2>
+            <form id="bookingForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="joiningDate">Joining Date:</label>
+                <input type="date" id="joiningDate" name="joiningDate" required>
+
+                <!-- New Time Dropdown -->
+                <label for="timeSelect">Select Time:</label>
+                <select id="timeSelect" name="timeSelect" required>
+                    <option value="" disabled selected>Select a time slot</option>
+                    <option value="morning">Morning Batch (7 AM)</option>
+                    <option value="afternoon">Afternoon Batch (1 PM)</option>
+                    <option value="evening">Evening Batch (6 PM)</option>
+                </select>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+    <h5> contact us: 07417591110</h5>
+    <!--Button to navigate to booking.html-->
+    <a href="booking.html"><button id="bookTrialBtn"> Book Free Trial Class</button></a>
+    <!-- <button id="bookTrialBtn">Book a Trial</button> Button to open the booking form modal -->
+    <!-- Custom Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <p>Do you have your doctor's approval to do Yoga?</p>
+            <button id="modalYes">Yes</button>
+            <button id="modalNo">No</button>
+        </div>
+    </div>
+     <!-- Footer -->
+     <footer>
+        Coach2Code Project by Tushita Roy
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

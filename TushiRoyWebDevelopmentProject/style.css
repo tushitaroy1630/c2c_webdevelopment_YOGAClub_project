@@ -1,0 +1,244 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3edeb; /*background form colour*/
+    text-align:center;
+}
+
+h1, h2 {
+    color: #008000; 
+    margin: 0;
+    padding: 20px 0;
+}
+h3{
+    color: #008000;
+     margin: 0px auto;
+    padding: 20px 0;
+    width: 60%;
+    text-align: left;
+
+}
+h5{
+    color: #007bff;
+    text-decoration:none;
+    margin: 5px ;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+p {
+    width: 60%;
+    margin: 0px auto;
+    color: #555;
+    text-align: justify;
+}
+img{
+    margin: 20px 0;
+}
+ul, ol {
+    text-align: left;
+    width: 60%;
+    margin: 10px auto;
+    padding-left: 40px; /* Add some padding to list items */
+    color: #555;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #36d553;
+    color: #fff;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+a{
+    color: #007bff;
+    text-decoration:none;
+    margin: 10px 5px;
+} 
+
+
+a:hover{
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width:100%;
+}
+
+header{
+ background-image: url('https://hamptons.com/wp-content/uploads/2021/07/hamptons-sunrise-yoga-900x600.jpg');  /*Background image for Header*/
+ background-size: cover;
+ background-position: left;
+ height: 120px;
+ color: #460da1;   /*discipline */
+ display:flex;
+ flex-direction:column;
+ align-items: center;
+ justify-content: center;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+.modal button{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal button:hover{
+    background-color: #0056b3;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Form Container Stles*/
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+/* Form Field Styles */
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*RadioButton*/
+.form-container input[type ="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+/*gender radio button*/
+.form-container .gender-options {
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+   gap :15px;
+}
+/* Button Styles inside the form*/
+.form-container button {
+    width: calc(42% - 10px);
+    margin: 10px 25px 0 0;
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: ;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.form-container button[type="reset"] {
+    background-color: #ff6666;
+}
+
+.form-container button[type="reset"]:hover {
+    background-color: #e60000;
+}
+/*Back Button*/
+.back-button {
+    width: fit-content;
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover{
+    background-color: #218838;
+}
+
+/*checkbox style*/
+.form-container .checkbox-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 10px;
+    text-align: left;
+}
+/* Time Dropdown Styles */
+#timeSelect {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
